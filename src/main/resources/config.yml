@@ -1,0 +1,10 @@
+# Port d'écoute du mini serveur HTTP exposant le statut du réseau
+port: 8181
+
+# Adresse d'écoute : 127.0.0.1 si le backend Node tourne sur la même machine
+# que le proxy Velocity (recommandé). Mets 0.0.0.0 seulement si le backend est
+# ailleurs, et protège alors ce port avec un pare-feu.
+bind-address: 127.0.0.1
+
+# Clé secrète à renseigner aussi côté backend (MC_PLUGIN_API_KEY dans .env)
+api-key: change-moi
