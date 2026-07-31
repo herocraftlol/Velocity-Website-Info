@@ -41,7 +41,7 @@ import java.util.Optional;
 @Plugin(
         id = "webstatus-velocity",
         name = "WebStatusVelocity",
-        version = "1.0.0",
+        version = "1.0.1",
         description = "Expose un endpoint HTTP JSON avec le statut détaillé du réseau (joueurs en ligne, répartition par sous-serveur) pour l'afficher en direct sur le site web.",
         authors = {"Toi"}
 )
