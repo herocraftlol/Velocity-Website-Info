@@ -1,4 +1,4 @@
-# Port d'écoute du mini serveur HTTP exposant le statut du réseau
+# Port d'écoute du mini serveur HTTP exposant le statut du réseau + les connexions
 port: 8181
 
 # Adresse d'écoute : 127.0.0.1 si le backend Node tourne sur la même machine
@@ -8,3 +8,13 @@ bind-address: 127.0.0.1
 
 # Clé secrète à renseigner aussi côté backend (MC_PLUGIN_API_KEY dans .env)
 api-key: change-moi
+
+# Suivi des connexions (nombre de joueurs/jour, versions, Java/Bedrock, pays)
+# pour l'onglet admin "Statistiques" du site. Ne stocke jamais l'IP elle-même,
+# seulement le pays/la région résolus si geo-enabled est activé.
+track-connections: true
+
+# Géolocalisation des connexions par IP (via l'API publique ip-api.com, gratuite,
+# sans clé). Désactive si tu préfères ne jamais envoyer les IP des joueurs à un
+# service tiers (le pays/la région resteront alors "Inconnu").
+geo-enabled: true
